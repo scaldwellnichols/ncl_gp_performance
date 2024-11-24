@@ -15,4 +15,21 @@ To set up a virtual environment for the project, please run the following comman
 
 The pipeline can be run using the jupyter notebook `main.ipynb`. 
 Make sure the notebook is connected to the virtual environment before running.
-Code is shown alongside markdown documentation of each step in the process. 
+Code is shown alongside markdown documentation explaining each step in the process.
+
+## Project Structure
+
+The project is structured as follows:
+```
+.
+├── data                    Folder to store input data
+├── outputs                 Folder to store code outputs (visualisations etc)
+├── src                     Source code for the project
+│   ├── parameters.py       Parameters defining performance metrics to consider
+│   ├── utils.py            Useful functions
+├── main.ipynb              Main notebook to run the pipeline
+├── README.md               This file
+├── requirements.txt        Packages used by the project
+└──setup.py                 Sets up the project as a python package
+```
+
