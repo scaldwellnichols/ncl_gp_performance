@@ -10,11 +10,13 @@ To set up a virtual environment for the project, please run the following comman
 > .\.venv\Scripts\activate.bat
 > python -m pip install -r requirements.txt
 ```
+Before running the pipeline please check the following:
+1. Make sure the notebook is connected to the virtual environment before executing any code cells;
+2. Create a folder called `data` containing the `task_dataset.csv` in the root directory of the project, as shown below. Or alter the file paths in `src/parameters.py` specifying the location of the dataset locally. 
 
 ## Running the Pipeline
 
 The pipeline can be run using the jupyter notebook `main.ipynb`. 
-Make sure the notebook is connected to the virtual environment before executing any code cells.
 Code is shown alongside markdown documentation explaining each step in the process.
 
 ## Project Structure
@@ -23,6 +25,7 @@ The project is structured as follows:
 ```
 .
 ├── data                    Folder to store input data
+│   ├── task_dataset.csv    GP level dataset (provided) including publically available statistics 
 ├── outputs                 Folder to store code outputs (visualisations etc)
 ├── src                     Source code for the project
 │   ├── parameters.py       Parameters defining performance metrics to consider
