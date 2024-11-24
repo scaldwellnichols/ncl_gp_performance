@@ -7,30 +7,28 @@ OUTPUTS_DIR = BASE_DIR / 'outputs'
 
 ncl_icb = 'QMJ'
 
-performance_metrics = pd.DataFrame({
-    'metric' :  ['appts_per_gp',
-                'same_day_appointment_percentage',
-                'digital_access_percentage',
-                'attendance_rate',
-                'qof_total',
-                'qof_hypertension',
-                'qof_child_vaccination',
-                'EmergencyPresentationsCancer',
-                'AntibioticPrescribing',
-                'overallexp',
-                'lastgpapptneeds',
-                'lastgpapptwait',
-                'localgpservicesreception',
-                'gpcontactoverall',
-                'responsive_coded',
-                'overall_coded',
-                'wellled_coded',
-                'effective_coded',
-                'caring_coded',
-                'safe_coded'],
-    'invert' : [False, False, False, False, False, True, False, True, True, False, False, False, False, False, False, False, False, False, False, False],
-    'weight' : [1, 3, 1, 2, 1, 1, 3, 2, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1]
-})
+performance_metrics = {
+    'appts_per_gp': {'invert': False, 'weight':2},
+    'same_day_appointment_percentage': {'invert': False, 'weight': 2},
+    'digital_access_percentage': {'invert': False, 'weight': 1},
+    'attendance_rate': {'invert': False, 'weight': 2},
+    'qof_total': {'invert': False, 'weight': 1/4},
+    'qof_hypertension': {'invert': True, 'weight': 1/4},
+    'qof_child_vaccination': {'invert': False, 'weight': 1/4},
+    'EmergencyPresentationsCancer': {'invert': True, 'weight': 1/4},
+    'AntibioticPrescribing': {'invert': True, 'weight': 1/4},
+    'overallexp': {'invert': False, 'weight': 1},
+    # 'lastgpapptneeds': {'invert': False, 'weight': 1},
+    # 'lastgpapptwait': {'invert': False, 'weight': 1},
+    # 'localgpservicesreception': {'invert': False, 'weight': 1},
+    # 'gpcontactoverall': {'invert': False, 'weight': 1},
+    'overall_coded': {'invert': False, 'weight': 1},
+    # 'responsive_coded': {'invert': False, 'weight': 1},
+    # 'wellled_coded': {'invert': False, 'weight': 1},
+    # 'effective_coded': {'invert': False, 'weight': 1},
+    # 'caring_coded': {'invert': False, 'weight': 1},
+    # 'safe_coded': {'invert': False, 'weight': 1}
+ }
 
 column_display_names = {
     'gp_code': 'GP Code',
