@@ -20,6 +20,9 @@ def get_gp_name(gp_code : str) -> str:
     """
     Function to get the name of a GP practice from the NHS Spine Organisation Data Service (ODS) API.
 
+    Please note that this API is only available during working hours (9-5, Monday to Friday).
+    Therefore, this function will return 'Unknown' if run outside working hours when the API is not available.
+
     Parameters
     ----------
     gp_code : str
