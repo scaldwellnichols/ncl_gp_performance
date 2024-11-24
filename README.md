@@ -14,7 +14,7 @@ To set up a virtual environment for the project, please run the following comman
 ## Running the Pipeline
 
 The pipeline can be run using the jupyter notebook `main.ipynb`. 
-Make sure the notebook is connected to the virtual environment before running.
+Make sure the notebook is connected to the virtual environment before executing any code cells.
 Code is shown alongside markdown documentation explaining each step in the process.
 
 ## Project Structure
