@@ -29,10 +29,13 @@ The project is structured as follows:
 ├── outputs                 Folder to store code outputs (visualisations etc)
 ├── src                     Source code for the project
 │   ├── parameters.py       Parameters defining performance metrics to consider
-│   ├── utils.py            Useful functions
+│   └── utils.py            Useful functions
+├── tests                   Tests for source code
+│   └── unittests           Unit-tests for functions and classes defined in the code
+│       └── test_utils.py   Tests for functions in src/utils.py
 ├── main.ipynb              Main notebook to run the pipeline
 ├── README.md               This file
 ├── requirements.txt        Packages used by the project
-└── setup.py                 Sets up the project as a python package
+└── setup.py                Sets up the project as a python package
 ```
 
