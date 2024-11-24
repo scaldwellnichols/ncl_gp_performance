@@ -33,6 +33,6 @@ The project is structured as follows:
 ├── main.ipynb              Main notebook to run the pipeline
 ├── README.md               This file
 ├── requirements.txt        Packages used by the project
-└──setup.py                 Sets up the project as a python package
+└── setup.py                 Sets up the project as a python package
 ```
 
