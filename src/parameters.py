@@ -29,27 +29,7 @@ performance_metrics = pd.DataFrame({
                 'caring_coded',
                 'safe_coded'],
     'invert' : [False, False, False, False, False, True, False, True, True, False, False, False, False, False, False, False, False, False, False, False],
-    'weight' : [1, 3, 1, 2, 1, 1, 3, 2, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1],
-    'name' : ['Appointments per GP',
-            'Same Day Appointment Percentage',
-            'Digital Access Percentage',
-            'Attendance Rate',
-            'QOF Total',
-            'QOF Hypertension',
-            'QOF Child Vaccination',
-            'QOF Emergency Presentations Cancer',
-            'QOF Antibiotic Prescribing',
-            'GP Survey - Overall Experience',
-            'GP Survey - Last Appointment Needs Met',
-            'GP Survey - Last Appointment Wait',
-            'GP Survey - Reception Helpfullness',
-            'GP Survey - Last Contact Overall Experience',
-            'CQC Responsive',
-            'CQC Overall',
-            'CQC Well Led',
-            'CQC Effective',
-            'CQC Caring',
-            'CQC Safe']
+    'weight' : [1, 3, 1, 2, 1, 1, 3, 2, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1]
 })
 
 column_display_names = {
