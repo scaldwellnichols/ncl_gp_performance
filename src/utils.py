@@ -1,4 +1,5 @@
 import requests
+import pandas as pd
 
 def min_max_normalisation(series):
     """
@@ -14,6 +15,10 @@ def min_max_normalisation(series):
     pandas.Series
         The normalised series.
     """
+    if len(series) == 1:
+        return pd.Series([0.0])
+    if series.max() == series.min():
+        return pd.Series([0.0] * len(series))
     return (series - series.min()) / (series.max() - series.min())
 
 def get_gp_name(gp_code : str) -> str:
