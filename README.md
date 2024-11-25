@@ -12,7 +12,7 @@ To set up a virtual environment for the project, please run the following comman
 ```
 Before running the pipeline please check the following:
 1. Make sure the notebook is connected to the virtual environment before executing any code cells;
-2. Create a folder called `data` containing the `task_dataset.csv` in the root directory of the project, as shown below. Or alter the file paths in `src/parameters.py` specifying the location of the dataset locally. 
+2. Create a folder called `data` containing the `task_dataset.csv` in the root directory of the project, as shown below. This will be ignored by git. Alternatively, alter the file paths in `src/parameters.py` specifying the location of the dataset locally. 
 
 ## Running the Pipeline
 
