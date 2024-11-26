@@ -11,10 +11,10 @@ data_file_name = 'task_dataset.csv'
 ncl_icb = 'QMJ'
 
 performance_metrics = {
-    'appts_per_gp': {'invert': False, 'weight':2},
-    'same_day_appointment_percentage': {'invert': False, 'weight': 2},
+    'appts_per_gp': {'invert': False, 'weight':1},
+    'same_day_appointment_percentage': {'invert': False, 'weight': 1},
     'digital_access_percentage': {'invert': False, 'weight': 1},
-    'attendance_rate': {'invert': False, 'weight': 2},
+    'attendance_rate': {'invert': False, 'weight': 1},
     'qof_total': {'invert': False, 'weight': 1},
     'qof_hypertension': {'invert': True, 'weight': 1},
     'qof_child_vaccination': {'invert': False, 'weight': 1},
