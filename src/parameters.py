@@ -15,7 +15,7 @@ performance_metrics = {
     'same_day_appointment_percentage': {'invert': False, 'weight': 1},
     'digital_access_percentage': {'invert': False, 'weight': 1},
     'attendance_rate': {'invert': False, 'weight': 1},
-    'qof_total': {'invert': False, 'weight': 1},
+    #'qof_total': {'invert': False, 'weight': 1},
     'qof_hypertension': {'invert': True, 'weight': 1},
     'qof_child_vaccination': {'invert': False, 'weight': 1},
     'BreastScreeningCancer': {'invert': False, 'weight': 1},
